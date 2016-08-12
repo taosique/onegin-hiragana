@@ -1,0 +1,104 @@
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            color: #333333;
+            line-height: 1.5em;
+        }
+
+        .wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            position: fixed;
+            padding: 0;
+            bottom: 20px;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-color: #0099FF;
+            color: #FFFFFF;
+            width: 500px;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            min-height: 50px;
+        }
+
+        .scrollable {
+            font-family: inherit;
+            font-size: inherit;
+            text-align: left;
+            overflow: auto;
+            margin-bottom: 100px;
+        }
+
+        button:hover {
+            background-color: #5588BB;
+        }
+
+        .replacement {
+            color: #FF0000;
+            font-weight: bold;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+            html {
+                -webkit-text-size-adjust: 100%;
+            }
+
+            body {
+                font-size: 50px;
+                line-height: 1.7em;
+                overflow: hidden;
+            }
+
+            .wrapper {
+                max-width: initial;
+                margin: initial;
+            }
+
+            .button-container {
+                padding: 0;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                position: fixed;
+            }
+
+            button {
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                padding: 10px;
+                width: 100%;
+                min-height: 100px;
+            }
+
+            .scrollable {
+                font-family: inherit;
+                font-size: inherit;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                max-height: calc(100% - 160px);
+                position: fixed;
+                margin: initial;
+            }
+        }
